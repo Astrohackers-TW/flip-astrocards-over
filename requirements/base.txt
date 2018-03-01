@@ -1,0 +1,9 @@
+# Django
+Django==1.11
+
+# Configuration
+django-environ==0.4.4
+
+# Time zones support
+pytz==2018.3
+
