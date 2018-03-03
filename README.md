@@ -41,7 +41,21 @@
   ```
 
 ### flip-astrocards-over專案的目錄結構概要
-(待補)
+為了讓專案更為結構化且符合實務， 此專案的目錄結構採用Django專案範本產生器[Cookiecutter Django](https://github.com/pydanny/cookiecutter-django)及[Two Scoops of Django 1.11](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)一書所偏好的project layout， 而非Django project預設的目錄結構。 [flip-astrocards-over專案根目錄](https://github.com/Astrohackers-TW/flip-astrocards-over)包含以下子目錄及檔案:
+
+* [config/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/config)目錄: 包含[settings/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/config/settings)目錄、[URL設定檔](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/urls.py)及[WSGI設定檔](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/wsgi.py)。 [settings/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/config/settings)目錄中又包含用以進行local端開發 ([local.py](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/settings/local.py)) 、測試([test.py](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/settings/test.py))及上線([production.py](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/settings/production.py))等不同狀況時的設定檔, 這三個檔都繼承自基本設定檔[base.py](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/config/settings/base.py)。 
+
+* [astrocards/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/astrocards)目錄: 將包含此專案中司職不同功能的[apps](https://docs.djangoproject.com/en/1.11/ref/applications/)及其所屬的[templates](https://docs.djangoproject.com/en/1.11/ref/templates/)和[static files](https://docs.djangoproject.com/en/1.11/howto/static-files/)。
+
+* [requirements/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/requirements)目錄: 包含用以進行local端開發 ([local.txt](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/requirements/local.txt)) 、測試([test.txt](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/requirements/test.txt))及上線([production.txt](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/requirements/production.txt))等不同狀況時的Python套件需求, 這三個檔都繼承自基本套件需求檔[base.txt](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/requirements/base.txt)。 
+
+* [docs/](https://github.com/Astrohackers-TW/flip-astrocards-over/tree/master/docs)目錄: 將包含專案相關的文件檔案。
+
+* [README.md](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/README.md): 此專案GitHub repository的主說明文件。
+
+* [.gitignore](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/.gitignore): 包含git commit時不需要版本控制而要忽略的檔案列表及規則。
+
+* [LICENSE-CODE](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/LICENSE-CODE)和[LICENSE-TEXT](https://github.com/Astrohackers-TW/flip-astrocards-over/blob/master/LICENSE-TEXT): 分別為專案程式碼及文件的開源授權條款。
 
 ### 規範
 * 程式碼風格規範: 
