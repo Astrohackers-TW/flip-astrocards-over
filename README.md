@@ -5,6 +5,10 @@
 
 以卡牌遊戲的方式吸引群眾為天文相關的開源Python套件建檔的平台(Django專案)。
 
+## 專案開發共筆
+* [HackMD文件](https://hackmd.io/c/r1k_Qf3vz)
+
+
 ## 給協作者的專案開發須知
 ### 開發環境建立
 本專案以Python 3.6, Django 1.11和PostgreSQL開發，並以Git/GitHub控制程式碼版本，請協作者依照以下步驟建立開發環境:
