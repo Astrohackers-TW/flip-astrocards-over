@@ -108,8 +108,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # See: https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(ROOT_DIR.path('db.sqlite3')),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ASTROCARDS',
+        'USER': 'astrohacker',
+        'PASSWORD': 'astrohacker',
+        'HOST': '127.0.0.1',
+        'PORT': '',
     }
 }
 
