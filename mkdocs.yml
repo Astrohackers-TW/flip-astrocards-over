@@ -1,1 +1,6 @@
 site_name: flip-astrocards-over
+
+theme: readthedocs
+
+pages:
+- Home: index.md
